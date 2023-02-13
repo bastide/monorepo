@@ -1,5 +1,4 @@
 <template>
-  <h1>Utilitaires Backend</h1>
   <div>
     <ul>
       <li><a href="http://localhost:8989/swagger-ui/index.html" target="_blank">Swagger</a></li>

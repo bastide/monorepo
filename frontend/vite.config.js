@@ -1,11 +1,17 @@
 import { defineConfig } from 'vite'
+import { fileURLToPath, URL } from 'node:url'
+
 import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-    // Change build paths to make them Maven compatible
-  // see https://vitejs.dev/config/build-options.html
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url))
+    }
+  },
+  // Change build paths to make them Maven compatible
   build: {
     outDir: 'target/dist',
     assetsDir: 'static',
@@ -16,7 +22,7 @@ export default defineConfig({
         target: 'http://localhost:8989', // correspond à la config du backend server.port dans application.properties
         changeOrigin: true,
       },
-      '/rest': { // L'adresse d'un contrôleur ad-hoc pour les services métier
+      '/rest': { // L'adresse des contrôleurs ad-hoc pour les services métier
         target: 'http://localhost:8989', // correspond à la config du backend server.port dans application.properties
         changeOrigin: true,
       },

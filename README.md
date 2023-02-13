@@ -1,6 +1,6 @@
 # Un "MonoRepo" avec Spring Boot, vue.js et Bootstrap
 
-## Project setup
+## Structure du projet
 
 ```
 monorepo
@@ -32,16 +32,9 @@ Ouvrir http://localhost:8989/ pour accéder à l'application.
 
 ## Utilisation des outils de développement "front-end"
 
-On peut lancer webpack-dev-server, qui "rafraîchit" automatiquement le front-end à chaque changement dans le code ! Pour cela, se positionner dans le répertoire `frontend` et lancer :
+On peut lancer le serveur de développement, qui "rafraîchit" automatiquement le front-end à chaque changement dans le code ! Pour cela, se positionner dans le répertoire `frontend` et lancer :
 
-Linux & Mac OS (windows git bash)-
 ```
-export NODE_OPTIONS=--openssl-legacy-provider
-npm run serve
-```
-Windows command prompt-
-```
-set NODE_OPTIONS=--openssl-legacy-provider
 npm run serve
 ```
 

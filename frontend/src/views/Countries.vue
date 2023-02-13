@@ -6,5 +6,5 @@
 </template>
 
 <script setup>
-import CountryList from "../components/CountryList.vue";
+import CountryList from "@/components/CountryList.vue";
 </script>
