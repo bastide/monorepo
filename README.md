@@ -15,29 +15,30 @@ monorepo
 
 ## Pour exécuter le projet
 
-A la racine du projet: 
+A la racine du projet:
 
-```
+```bash
 mvn clean install
 ```
+
 Va construire le frontend, recopier les fichiers dans le backend.
 
 Exécution de l'application "fullstack" :
 
-```
+```bash
 mvn --projects backend spring-boot:run
 ```
 
-Ouvrir http://localhost:8989/ pour accéder à l'application.
+Ouvrir <http://localhost:8989/> pour accéder à l'application.
 
 ## Utilisation des outils de développement "front-end"
 
 On peut lancer le serveur de développement, qui "rafraîchit" automatiquement le front-end à chaque changement dans le code ! Pour cela, se positionner dans le répertoire `frontend` et lancer :
 
-```
+```bash
 npm run dev
 ```
 
 ## Browser developer tools extension
 
-Installer vue-devtools Browser extension https://devtools.vuejs.org/ dans votre navigateur pour débugger plus facilement le front-end.
+Installer vue-devtools Browser extension <https://devtools.vuejs.org/> dans votre navigateur pour débugger plus facilement le front-end.
