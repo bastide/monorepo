@@ -35,7 +35,7 @@ Ouvrir http://localhost:8989/ pour accéder à l'application.
 On peut lancer le serveur de développement, qui "rafraîchit" automatiquement le front-end à chaque changement dans le code ! Pour cela, se positionner dans le répertoire `frontend` et lancer :
 
 ```
-npm run serve
+npm run dev
 ```
 
 ## Browser developer tools extension
