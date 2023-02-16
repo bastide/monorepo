@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
-import Countries from '../views/Countries.vue'
-import About from '../views/About.vue'
-import Ajax  from "../views/Ajax.vue";
+import Home from '@/views/Home.vue'
+import Countries from '@/views/Countries.vue'
+import About from '@/views/About.vue'
+import Ajax  from "@/views/Ajax.vue";
+import CountryAdd  from "@/views/CountryAdd.vue";
 
 
 const router = createRouter({
@@ -24,6 +25,11 @@ const router = createRouter({
       name: 'ajax',
       component: Ajax
     },
+    {
+      path: '/ajoutePays',
+      name: 'ajoutePays',
+      component: CountryAdd
+    },    
     {
       path: '/about',
       name: 'about',
