@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-3">
+  <div  class="container-fluid">
     <div class="text-bg-light">
       Ce composant fait un appel AJAX sur <code>/api/countries</code> pour récupérer la liste des pays.
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-3">
+  <div class="container-fluid">
     <div class="text-bg-light">
       Ce composant fait un appel AJAX sur <code>/rest/combienDePays</code> pour accéder à la couche "Services".
     </div>

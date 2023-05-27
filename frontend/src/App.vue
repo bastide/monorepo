@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div  class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
       <a class="navbar-brand" href="#">Frontend</a>
@@ -18,8 +18,6 @@
         </div>
       </div>
     </nav>
-    <div class="container-fluid">
-        <router-view />
-    </div><!-- /.container -->
+    <router-view />
   </div>
 </template>

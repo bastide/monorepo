@@ -1,17 +1,17 @@
 <template>
-  <div>
+  <div class="container">
     <!-- Un formulaire pour saisir les valeurs de la catégorie à ajouter -->
     <form @submit.prevent="ajoutePays">
-      <div class="form-row align-items-center">
-        <div class="col-auto">
-          <label class="sr-only" for="code">Code ISO</label>
+      <div class="form-group row">
+        <div class="col-xs-2">
+          <label for="code">Code ISO</label>
           <input id="code" v-model="data.formulaire.code" size="2" maxlength="2" class="form-control mb-2">
         </div>
-        <div class="col-auto">
-          <label class="sr-only" for="name">Nom du pays</label>
+        <div class="col-xs-2">
+          <label  for="name">Nom du pays</label>
           <input id="name" v-model="data.formulaire.name" class="form-control mb-2">
         </div>
-        <div class="col-auto">
+        <div class="col-xs-2">
         <button type="submit" class="btn btn-primary mb-2">Ajouter</button>
         </div>
       </div>
