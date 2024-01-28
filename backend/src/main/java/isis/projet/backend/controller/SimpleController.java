@@ -24,6 +24,7 @@ public class SimpleController {
     @PutMapping("/combienDePays")
     public Map<String, Long> combienDePays() {
         log.info("Service combienDePays");
+        // On renverra un objet JSON de la forme {"combien": 123}
         return Map.of("combien", countryService.combienDePays());
     }
 }
