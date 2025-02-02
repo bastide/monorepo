@@ -1,41 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/views/Home.vue'
-import Countries from '@/views/Countries.vue'
-import About from '@/views/About.vue'
-import Ajax  from "@/views/Ajax.vue";
-import CountryAdd  from "@/views/CountryAdd.vue";
-
+import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-    // Associe des chemins d'accès au composant vue à afficher
   routes: [
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: HomeView,
     },
-    {
-      path: '/countries',
-      name: 'countries',
-      component: Countries
-    },
-    {
-      path: '/ajax',
-      name: 'ajax',
-      component: Ajax
-    },
-    {
-      path: '/ajoutePays',
-      name: 'ajoutePays',
-      component: CountryAdd
-    },    
     {
       path: '/about',
       name: 'about',
-      component: About
-    }
-  ]
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/AboutView.vue'),
+    },
+  ],
 })
 
 export default router
