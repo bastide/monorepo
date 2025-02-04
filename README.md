@@ -47,6 +47,6 @@ cd frontend
 npm run dev
 ```
 
-## Browser developer tools extension
+## Déployer sur un cloud
 
-Optionnel : installer vue-devtools Browser extension <https://devtools.vuejs.org/> dans votre navigateur pour débugger plus facilement le front-end.
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?name=monorepo&repository=bastide%2Fmonorepo&branch=master&instance_type=free)

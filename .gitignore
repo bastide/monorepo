@@ -20,6 +20,12 @@ target
 
 # Intellij #
 .idea
+# On conserve la définition des sources de données
+!.idea/dataSources/
+!.idea/dataSources.xml
+!.idea/dataSources.local.xml
+!.idea/sqldialects.xml
+
 *.iml
 *.log
 
